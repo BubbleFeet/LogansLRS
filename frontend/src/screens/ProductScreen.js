@@ -18,7 +18,7 @@ const ProductScreen = ({ history, match }) => {
 		() => {
 			dispatch(listProductDetails(match.params.id))
 		},
-		[ match ]
+		[ dispatch, match ]
 	)
 
 	const addToCartHandler = () => {
