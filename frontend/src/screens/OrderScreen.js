@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { PayPalButton } from 'react-paypal-button-v2'
 import { Link } from 'react-router-dom'
-import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
+import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -37,7 +37,7 @@ const OrderScreen = ({ match }) => {
 				const { data: clientId } = await axios.get('/api/config/paypal')
 				const script = document.createElement('script')
 				script.type = 'text/javascript'
-				script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`
+				script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}&currency=CAD`
 				script.async = true
 				script.onload = () => {
 					setSdkReady(true)
@@ -169,7 +169,7 @@ const OrderScreen = ({ match }) => {
 									{!sdkReady ? (
 										<Loader />
 									) : (
-										<PayPalButton amount={order.totalPrice} onSuccess={successPaymentHandler} />
+										<PayPalButton amount={order.totalPrice} onSuccess={successPaymentHandler} currency='CAD' />
 									)}
 								</ListGroup.Item>
 							)}
