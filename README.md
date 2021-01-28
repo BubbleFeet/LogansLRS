@@ -2,7 +2,6 @@
 
 > eCommerce platform built using MERN stack & Redux
 
-
 ![screenshot](https://github.com/BubbleFeet/LogansLRS/blob/main/frontend/public/images/b94b991df585ec11c955d0f08f906252.png)
 
 ## Features
