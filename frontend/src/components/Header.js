@@ -18,10 +18,12 @@ const Header = () => {
 
 	return (
 		<header>
-			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+			<Navbar variant='dark' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand>Logans Liquor Store</Navbar.Brand>
+						<Navbar.Brand href='#home'>
+							<img src='images/LOGANSLRSLOGO-NO-BG-2021-01-29.png' id='logo' alt='Logan&#39;s Liquor Store logo' />
+						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
