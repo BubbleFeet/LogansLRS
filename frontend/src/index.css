@@ -2,30 +2,6 @@ main {
   min-height: 80vh;
 }
 
-header i {
-  padding-right: .3rem;
-}
-
-#logo {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-    display: block;
-    width: 180px;
-    height: 90px;
-    position: absolute;
-    left: 14px;
-    top: 6px;
-    padding: 0;
-    margin: 0;
-}
-
-h3 {
-  padding: 1rem 0;
-}
-
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
@@ -36,19 +12,56 @@ h2 {
   padding: 0.5rem 0;
 }
 
+h3 {
+  padding: 1rem 0;
+}
+
+header i {
+  padding-right: 0.3rem;
+}
+
+header>.container-fluid {
+  padding: 0px;
+}
+
+#hoursBlock {
+  color: #fff;
+  padding: 0 0;
+}
+
 .rating span {
   margin: 0.1rem;
 }
 
 .navbar {
   background-color: #333;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
 
+.navbar-text>ul {
+  justify-content: space-around;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navbar-text>ul>li {
+  list-style: none;
+}
+
+.navbar-text>ul>li>a>i {
+  padding: 2px 0 0 0;
+  font-size: 24px;
+}
+
 /* carousel */
+.carousel {
+  background-color: #333;
+}
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
